@@ -123,9 +123,11 @@ body {
   align-items: center;
   color: #fff;
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
+  font-size: 1.2em;
+  background-color: maroon;
   height: 300px;
+  border-radius: 1em; 
+  padding: 0px 20px; 
 }
 
 
