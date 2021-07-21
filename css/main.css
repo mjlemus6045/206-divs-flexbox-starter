@@ -100,26 +100,34 @@ html {
   background: url('../img/wild-side.jpeg');
   background-color: #222;
   height: 100%;
+  width: 100%;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 1em;
+  padding: 0 2em;
   font-size: 1.25em;
-  height: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.flex-container {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content:space-evenly;
+  max-width: 1200px;
 }
 p span {
- font-family: 'Lora', sans-serif;
-  }
+  font-family: 'Lora', sans-serif;
+}
 
 header,
 footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  color: #fff;
+  align-items: center;
 }
-
 header h1 {
   font-family: 'Lora', sans-serif;
   font-size: 3em;
@@ -129,7 +137,6 @@ header h1 {
 main {
   width: 100%;
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
   border-bottom: 1px solid #fff;
 }
@@ -138,67 +145,57 @@ main p {
   font-size: 1.35em;
   color: #fff;
 }
-
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  display: flex;
-  justify-content: space-between;
-  font-weight: 700;
-}
-
-.div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+ /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+.flex-items { 
   width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   line-height: 1.5em;
-  font-size: 1.2em;
+  font-size: 1em;
   background-color: #a86449;
-  height: 300px;
-  border-radius: 1em; 
-  padding: 0px 20px; 
+  border-radius: 1em;
 }
 
-footer {
+.contact {  
+  width: 100%;
   border-top: 1px solid #fff;
-
+  padding: 0 280px;
 }
-
-/***** Contact *****/
-#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
-    padding: 0 115px;
+h2 { 
     font-size: 2em;
     font-weight: bold;
     line-height: .35em;
+    padding-left: 125px;
 }
-#contact #envelope {
-    padding: 0 5px 0 115px;
+#envelope {
+    margin-left: 110px;
 }
-#contact h3 {
+h3 {
     font-size: 2em;
-    font-weight: bold;
+    font-weight: bold; 
+    padding: 0 50px;
 }
-#contact a {
+ul {
+    list-style:none;
+}
+ul li { 
+    padding: 0 60px;
+    line-height: .15em;
+    display: inline-block; 
+}
+ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     font-size: 1.75em;
     line-height: .15em;
 }
-#contact ul {
-    list-style: none;
+ul img {
+    padding-right: 1em;
 }
-#contact ul li {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center; 
-    line-height: .15em;   
-}
-#contact ul img {
-    padding-right: 3em;
-}
+
 
 
 
